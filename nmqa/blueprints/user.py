@@ -59,15 +59,6 @@ def register():
             return redirect(url_for("user.register"))
 
 
-# @bp.route("/mail")
-# def mail_test():
-#     message = Message(
-#         subject="邮箱测试",      # 邮件主题
-#         recipients=['1530151243@qq.com'],   # 收货人
-#         body="这是一篇flask测试邮件"
-#     )
-#     mail.send(message)
-#     return "success"
 
 @bp.route("/captcha", methods=['POST'])
 def get_captcha():
